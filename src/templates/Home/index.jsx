@@ -1,6 +1,6 @@
-import { useEffect, useState, useRef } from 'react';
-import './styles.css';
+import { useCounterContext } from '../../contexts/CounterContext';
 
 export const Home = () => {
+  const [state, dispatch] = useCounterContext();
   return <h1>Oi</h1>;
 };
